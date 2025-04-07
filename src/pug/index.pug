@@ -20,19 +20,35 @@ html(lang='en')
 
         include includes/navbar
 
+        // TODO: Fill in info for BWA
         section.page-section.clearfix
             .container
-                .intro
-                    img.intro-img.img-fluid.mb-3.mb-lg-0.rounded(src='assets/img/intro.jpg', alt='...')
-                    .intro-text.left-0.text-center.bg-faded.p-5.rounded
-                        h2.section-heading.mb-4
-                            span.section-heading-upper Fresh Coffee
-                            span.section-heading-lower Worth Drinking
-                        p.mb-3
-                            | Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
-                        .intro-button.mx-auto
-                            a.btn.btn-primary.btn-xl(href='#!') Visit Us Today!
+                h2.section-heading.mb-4.text-center
+                    span.section-heading-upper Image Carousel
+                    span.section-heading-lower
 
+                .carousel.slide#carouselExampleIndicators(data-bs-ride='carousel')
+                    .carousel-indicators
+                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='0', class='active', aria-current='true', aria-label='Slide 1')
+                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='1', aria-label='Slide 2')
+                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='2', aria-label='Slide 3')
+
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src='assets/img/intro.jpg', alt='First Slide')
+                        .carousel-item
+                            img.d-block.w-100(src='assets/img/intro.jpg', alt='Second Slide')
+                        .carousel-item
+                            img.d-block.w-100(src='assets/img/intro.jpg', alt='Third Slide')
+
+                    .carousel-control-prev(href='#carouselExampleIndicators', role='button', data-bs-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.visually-hidden Previous
+                    .carousel-control-next(href='#carouselExampleIndicators', role='button', data-bs-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.visually-hidden Next
+
+        // Trainer title
         section.page-section.cta
             .container
                 .row
@@ -43,6 +59,37 @@ html(lang='en')
                                 span.section-heading-lower To You
                             p.mb-0
                                 | When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!
+
+        // First trainer section - LEFT JUSTIFIED
+        section.page-section.clearfix
+            .container
+                .intro
+                    img.intro-img.img-fluid.mb-3.mb-lg-0.rounded(src='assets/img/intro.jpg', alt='...')
+                    .intro-text.left-0.text-center.bg-faded.p-5.rounded
+                        h2.section-heading.mb-4
+                            span.section-heading-upper Head Trainer
+                            span.section-heading-lower Vince Valor
+                        p.mb-3
+                            | Man.
+                        .intro-button.mx-auto
+                            a.btn.btn-primary.btn-xl(href='#!') Visit Us Today!
+
+        // Second trainer section - RIGHT JUSTIFIED
+        section.page-section.clearfix
+            .container
+                .intro.d-flex.flex-column.flex-lg-row-reverse
+                    img.intro-img.img-fluid.mb-3.mb-lg-0.rounded(src='assets/img/intro.jpg', alt='...')
+                    .intro-text.right-0.text-center.bg-faded.p-5.rounded
+                        h2.section-heading.mb-4
+                            span.section-heading-upper Trainer
+                            span.section-heading-lower Robby Vegas
+                        p.mb-3
+                            | Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
+                        .intro-button.mx-auto
+                            a.btn.btn-primary.btn-xl(href='#!') Visit Us Today!
+
+        // Have a carousel of testimonials
+
 
         include includes/footer
 
