@@ -30,8 +30,8 @@ html(lang='en')
                         .col-xl-9.col-lg-10.mx-auto
                             .bg-faded.rounded.p-5
                                 h2.section-heading.mb-4
-                                    span.section-heading-upper Strong Coffee, Strong Roots
-                                    span.section-heading-lower About Our Cafe
+                                    span.section-heading-upper Need a fun event?
+                                    span.section-heading-lower Host ESW
                                 p
                                     | Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.
                                 p.mb-0
@@ -39,6 +39,28 @@ html(lang='en')
                                     em lust
                                     |  with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.
 
+        section.page-section.clearfix
+            .container
+                .carousel.slide#carouselExampleIndicators(data-bs-ride='carousel')
+                    .carousel-indicators
+                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='0', class='active', aria-current='true', aria-label='Slide 1')
+                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='1', aria-label='Slide 2')
+                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='2', aria-label='Slide 3')
+
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src='assets/img/intro.jpg', alt='First Slide')
+                        .carousel-item
+                            img.d-block.w-100(src='assets/img/intro.jpg', alt='Second Slide')
+                        .carousel-item
+                            img.d-block.w-100(src='assets/img/intro.jpg', alt='Third Slide')
+
+                    .carousel-control-prev(href='#carouselExampleIndicators', role='button', data-bs-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.visually-hidden Previous
+                    .carousel-control-next(href='#carouselExampleIndicators', role='button', data-bs-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.visually-hidden Next
         include includes/footer
 
         include includes/scripts
