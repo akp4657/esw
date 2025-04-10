@@ -10826,7 +10826,8 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../assets/img/bg.jpg");
+  /*background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../assets/img/bg.jpg");*/
+  background-color: gray;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -10937,6 +10938,23 @@ p {
   padding-bottom: 5rem;
   background-color: rgba(230, 167, 86, 0.9);
 }
+
+.cta-roster {
+  width: 700px;
+  margin-bottom: -75px;
+  margin-top: 10px;
+  margin-top: 25px;
+  padding-top: 20px;
+  padding-bottom: 0.15px;
+  background-color: white;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+
 .cta .cta-inner {
   position: relative;
   padding: 3rem;
