@@ -10837,12 +10837,41 @@ body::before {
   z-index: -1;
 }
 
+body.bwa-page #mainNav,
+body.bwa-page footer,
+body.bwa-page .btn {
+  background-color: #75378d;
+  color: white;
+}
+body.bwa-page #mainNav a,
+body.bwa-page #mainNav a:hover,
+body.bwa-page footer a,
+body.bwa-page footer a:hover,
+body.bwa-page .btn a,
+body.bwa-page .btn a:hover {
+  color: white;
+}
+body.bwa-page .btn {
+  border: 2px solid #75378d;
+}
+body.bwa-page .bg-faded {
+  border: 3px solid #75378d;
+}
+
+body.bwa-page .site-heading-upper.text-primary {
+  color: #75378d !important;
+}
+
 p {
   line-height: 1.75;
 }
 
 .text-faded {
   color: white;
+}
+
+i:hover {
+  color: #bbbbbb;
 }
 
 .site-heading {

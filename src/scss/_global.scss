@@ -22,6 +22,31 @@ body::before {
     z-index: -1;
 }
 
+body.bwa-page {
+    #mainNav,
+    footer,
+    .btn {
+        background-color: $bwa; 
+        color: white;
+        a,
+        a:hover {
+        color: white;
+        }
+    }
+
+    .btn {
+        border: 2px solid $bwa;
+    }
+    .bg-faded {
+        border: 3px solid $bwa;
+    }
+}
+
+body.bwa-page .site-heading-upper.text-primary {
+    color: $bwa !important;
+}
+
+
 p {
     line-height: 1.75;
 }
@@ -30,6 +55,9 @@ p {
     color: lighten($modals, 25%);
 }
 
+i:hover {
+    color: fade-in($color: rgb(187, 187, 187), $amount: .2);
+}
 .site-heading {
     margin-top: 5rem;
     margin-bottom: 5rem;
