@@ -1,9 +1,9 @@
 #mainNav {
-    background-color: fade-out($secondary, 0.1);
+    background-color: fade-out($primary, 0.1);
     font-family: $headings-font-family;
 
     .navbar-brand {
-        color: $primary;
+        color: $secondary;
     }
 
     .navbar-nav {
@@ -16,7 +16,7 @@
 
             &.active {
                 .nav-link {
-                    color: $primary;
+                    color: $secondary;
                 }
             }
         }
@@ -35,7 +35,7 @@
 
                 &.active {
                     .nav-link:hover {
-                        color: $primary;
+                        color: $secondary;
                     }
                 }
             }

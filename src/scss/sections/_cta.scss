@@ -1,7 +1,7 @@
 .cta {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: fade-out($primary, 0.1);
+    background-color: fade-out($modals, 1);
 
     .cta-inner {
         position: relative;
@@ -12,12 +12,28 @@
             border-radius: 0.5rem;
             content: '';
             position: absolute;
-            top: -0.5rem;
-            bottom: -0.5rem;
-            left: -0.5rem;
-            right: -0.5rem;
-            border: 0.25rem solid fade-out($white, 0.15);
+            top: -0.7rem;
+            bottom: -0.7rem;
+            left: -0.7rem;
+            right: -0.7rem;
+            border: 0.27rem solid $modals;
             z-index: -1;
         }
     }
 }
+
+.cta-roster {
+    width: 700px;
+    margin-bottom: -75px;
+    margin-top: 10px;
+    margin-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 0.15px;
+    background-color: $modals;
+    border-radius: 5px;
+    border: 2px solid $secondary;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  

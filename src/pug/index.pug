@@ -1,0 +1,67 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Host ESW
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
+
+        include includes/css
+
+    body
+
+        include includes/header
+
+        include includes/navbar
+
+        // TODO: This will be the Host ESW page
+        // TODO: Pages needed - Fundraising and Sponsoring
+        section.page-section.about-heading
+            .container
+                img.img-fluid.rounded.about-heading-img.mb-3.mb-lg-0(src='assets/img/about.jpg', alt='...')
+                .about-heading-content
+                    .row
+                        .col-xl-9.col-lg-10.mx-auto
+                            .bg-faded.rounded.p-5
+                                h2.section-heading.mb-4
+                                    span.section-heading-upper Looking to host wrestling?
+                                    span.section-heading-lower Host ESW
+                                p
+                                    | Are you an event venue or organizer looking to host Buffalo's premier wrestling promotion?
+                                p.mb-0
+                                    | ESW regularly draws hundreds of fans to its events, with some even eclipsing 1,000 in attendance.
+                                    | Contact 
+                                    a(href='mailto:eswoffice@yahoo.com?subject=Interested%20in%20Hosting%20ESW' target="_blank") eswoffice@yahoo.com
+                                    | for more information.
+        section.page-section.clearfix
+            .container
+                .carousel.slide#carouselExampleIndicators(data-bs-ride='carousel')
+                    .carousel-indicators
+                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='0', class='active', aria-current='true', aria-label='Slide 1')
+                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='1', aria-label='Slide 2')
+                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='2', aria-label='Slide 3')
+
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src='assets/img/intro.jpg', alt='First Slide')
+                        .carousel-item
+                            img.d-block.w-100(src='assets/img/intro.jpg', alt='Second Slide')
+                        .carousel-item
+                            img.d-block.w-100(src='assets/img/intro.jpg', alt='Third Slide')
+
+                    .carousel-control-prev(href='#carouselExampleIndicators', role='button', data-bs-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.visually-hidden Previous
+                    .carousel-control-next(href='#carouselExampleIndicators', role='button', data-bs-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.visually-hidden Next
+        include includes/footer
+
+        include includes/scripts
