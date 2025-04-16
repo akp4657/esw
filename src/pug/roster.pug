@@ -28,15 +28,24 @@ body
 
   section.page-section
     .container
-      .row.row-cols-1.row-cols-md-5.g-4
+      .row.row-cols-1.row-cols-md-4.g-4
         each wrestler in wrestlers
           if wrestler.category === 'Champion'
             .col
-              .card.h-100.text-center
-                img.card-img-top(src=wrestler.image, alt=wrestler.name, style='max-height: 150px; object-fit: cover;')
-                .card-body
-                  p.card-text= wrestler.description
-                  h5.card-title= wrestler.name
+              .card.text-center(style='height: 100%; display: flex; flex-direction: column; border-radius: 0.5rem; overflow: hidden;')
+                img.card-img-top(
+                  src=wrestler.image,
+                  alt=wrestler.name,
+                  style='height: 180px; object-fit: cover;'
+                )
+                if wrestler.description
+                  .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
+                    p.card-text.mb-2(style='font-size: 0.85rem;')= wrestler.description
+                    div.mt-auto
+                      h5.card-title.mb-0(style='font-size: 1rem;')= wrestler.name
+                else
+                  .card-body.p-2.d-flex.align-items-center.justify-content-center(style='flex-grow: 1;')
+                    h5.card-title.mb-0(style='font-size: 1rem;')= wrestler.name
 
   // Base Wrestlers
   section.page-section.cta-roster(style='margin-top: -30px;')
@@ -46,15 +55,24 @@ body
         span.section-heading-lower Wrestlers
   section.page-section
     .container
-      .row.row-cols-1.row-cols-md-5.g-4
+      .row.row-cols-1.row-cols-md-5.g-3
         each wrestler in wrestlers
           if wrestler.category === 'Wrestler'
             .col
-              .card.text-center
-                img.card-img-top(src=wrestler.image, alt=wrestler.name, style='max-height: 150px; object-fit: cover;')
-                .card-body
-                  p.card-text= wrestler.description
-                  h5.card-title= wrestler.name
+              .card.text-center(style='height: 100%; display: flex; flex-direction: column; border-radius: 0.5rem; overflow: hidden;')
+                img.card-img-top(
+                  src=wrestler.image,
+                  alt=wrestler.name,
+                  style='height: 180px; object-fit: cover;'
+                )
+                if wrestler.description
+                  .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
+                    p.card-text.mb-2(style='font-size: 0.85rem;')= wrestler.description
+                    div.mt-auto
+                      h5.card-title.mb-0(style='font-size: 1rem;')= wrestler.name
+                else
+                  .card-body.p-2.d-flex.align-items-center.justify-content-center(style='flex-grow: 1;')
+                    h5.card-title.mb-0(style='font-size: 1rem;')= wrestler.name
 
 
   // Refs
@@ -62,18 +80,21 @@ body
     .container
       h2.section-heading.mb-4
         span.section-heading-upper Roster
-        span.section-heading-lower Referees
+        span.section-heading-lower Staff
   section.page-section
     .container
       .row.row-cols-1.row-cols-md-5.g-4
         each wrestler in wrestlers
-          if wrestler.category === 'Referee'
+          if wrestler.category === 'Staff'
             .col
-              .card.h-100.text-center
-                img.card-img-top(src=wrestler.image, alt=wrestler.name, style='max-height: 150px; object-fit: cover;')
-                .card-body
-                  p.card-text= wrestler.description
-                  h5.card-title= wrestler.name
+              .card.text-center(style='height: 100%; display: flex; flex-direction: column; border-radius: 0.5rem; overflow: hidden;')
+                img.card-img-top(
+                  src=wrestler.image,
+                  alt=wrestler.name,
+                  style='height: 180px; object-fit: cover;'
+                )
+                .card-body.p-2.d-flex.align-items-center.justify-content-center(style='flex-grow: 1;')
+                  h5.card-title.mb-0(style='font-size: 1rem;')= wrestler.name
                 
 
 include includes/footer
