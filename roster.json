@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Vince Valor",
+      "category": "Champion",
+      "description": "ESW Heavyweight Champion",
+      "image": "https://drive.google.com/uc?export=view&id=1G1d2JRmr3DL7WUFhLNSAWy59CFJA4xaQ"
+    },
+
+
+
+    {
+      "name": "Frankie Feathers",
+      "category": "Wrestler",
+      "description": "",
+      "image": "assets/img/products-02.jpg"
+    },
+    {
+        "name": "Vince Valor",
+        "category": "Wrestler",
+        "description": "ESW Heavyweight Champion",
+        "image": "assets/img/products-01.jpg"
+      },
+
+
+
+    {
+      "name": "Ref Ryan",
+      "category": "Referee",
+      "description": "",
+      "image": "assets/img/products-03.jpg"
+    }
+  ]
+  

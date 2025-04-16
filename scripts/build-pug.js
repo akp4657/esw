@@ -2,6 +2,11 @@
 const upath = require('upath');
 const sh = require('shelljs');
 const renderPug = require('./render-pug');
+const pug = require('pug');
+const fs = require('fs');
+
+const wrestlers = JSON.parse(fs.readFileSync('./roster.json', 'utf8'));
+console.log(wrestlers)
 
 const srcPath = upath.resolve(upath.dirname(__filename), '../src');
 
@@ -14,6 +19,10 @@ function _processFile(filePath) {
         && !filePath.match(/mixin/)
         && !filePath.match(/\/pug\/layouts\//)
     ) {
-        renderPug(filePath);
+        if (filePath.endsWith('roster.pug')) {
+            renderPug(filePath, { wrestlers });
+        } else {
+            renderPug(filePath);
+        }
     }
 }

@@ -13,75 +13,68 @@ html(lang='en')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
     include includes/css
 
-  body
-    include includes/header
-    include includes/navbar
- 
-    // TODO: Need dynamic loading on wrestlers. This will be after the base site is put in place
-    
-    // Champions
-    section.page-section.cta-roster(style='margin-top: 45px;')
-      .container
-        h2.section-heading.mb-4
-          span.section-heading-upper Roster
-          span.section-heading-lower Champions
-    section.page-section
-      .container
-        .row.row-cols-1.row-cols-md-3.g-4
-          .col
-            .card.h-100.text-center
-              img.card-img-top(src='assets/img/products-01.jpg' alt='...')
-              .card-body
-                h5.card-title Blended to Perfection
-                p.card-text Coffees & Teas
+body
+  include includes/header
+  include includes/navbar
+  
+  // TODO: Need dynamic loading on wrestlers. This will be after the base site is put in place
 
-          .col
-            .card.h-100.text-center
-              img.card-img-top(src='assets/img/products-02.jpg' alt='...')
-              .card-body
-                h5.card-title Delicious Treats, Good Eats
-                p.card-text Bakery & Kitchen
+  // Champions
+  section.page-section.cta-roster(style='margin-top: 45px;')
+    .container
+      h2.section-heading.mb-4
+        span.section-heading-upper Roster
+        span.section-heading-lower Champions
 
-          .col
-            .card.h-100.text-center
-              img.card-img-top(src='assets/img/products-03.jpg' alt='...')
-              .card-body
-                h5.card-title From Around the World
-                p.card-text Bulk Specialty Blends
+  section.page-section
+    .container
+      .row.row-cols-1.row-cols-md-5.g-4
+        each wrestler in wrestlers
+          if wrestler.category === 'Champion'
+            .col
+              .card.h-100.text-center
+                img.card-img-top(src=wrestler.image, alt=wrestler.name, style='max-height: 150px; object-fit: cover;')
+                .card-body
+                  p.card-text= wrestler.description
+                  h5.card-title= wrestler.name
 
-    // Base Wrestlers
-    section.page-section.cta-roster(style='margin-top: -30px;')
-      .container
-        h2.section-heading.mb-4
-          span.section-heading-upper Roster
-          span.section-heading-lower Wrestlers
-    section.page-section
-      .container
-        .row.row-cols-1.row-cols-md-3.g-4
-          .col
-            .card.h-100.text-center
-              img.card-img-top(src='assets/img/products-01.jpg' alt='...')
-              .card-body
-                h5.card-title Blended to Perfection
-                p.card-text Coffees & Teas
+  // Base Wrestlers
+  section.page-section.cta-roster(style='margin-top: -30px;')
+    .container
+      h2.section-heading.mb-4
+        span.section-heading-upper Roster
+        span.section-heading-lower Wrestlers
+  section.page-section
+    .container
+      .row.row-cols-1.row-cols-md-5.g-4
+        each wrestler in wrestlers
+          if wrestler.category === 'Wrestler'
+            .col
+              .card.text-center
+                img.card-img-top(src=wrestler.image, alt=wrestler.name, style='max-height: 150px; object-fit: cover;')
+                .card-body
+                  p.card-text= wrestler.description
+                  h5.card-title= wrestler.name
 
 
-    // Refs
-    section.page-section.cta-roster(style='margin-top: -25px;')
-      .container
-        h2.section-heading.mb-4
-          span.section-heading-upper Roster
-          span.section-heading-lower Referees
-    section.page-section
-      .container
-        .row.row-cols-1.row-cols-md-3.g-4
-          .col
-            .card.h-100.text-center
-              img.card-img-top(src='assets/img/products-01.jpg' alt='...')
-              .card-body
-                h5.card-title Blended to Perfection
-                p.card-text Coffees & Teas
-                  
+  // Refs
+  section.page-section.cta-roster(style='margin-top: -25px;')
+    .container
+      h2.section-heading.mb-4
+        span.section-heading-upper Roster
+        span.section-heading-lower Referees
+  section.page-section
+    .container
+      .row.row-cols-1.row-cols-md-5.g-4
+        each wrestler in wrestlers
+          if wrestler.category === 'Referee'
+            .col
+              .card.h-100.text-center
+                img.card-img-top(src=wrestler.image, alt=wrestler.name, style='max-height: 150px; object-fit: cover;')
+                .card-body
+                  p.card-text= wrestler.description
+                  h5.card-title= wrestler.name
+                
 
-    include includes/footer
-    include includes/scripts
+include includes/footer
+include includes/scripts
