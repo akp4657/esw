@@ -83,6 +83,11 @@ i:hover {
     margin-bottom: 5rem;
 }
 
+header {
+    background-color: black;
+    padding: .01rem;
+}
+
 .section-heading {
     text-transform: uppercase;
 
@@ -106,4 +111,10 @@ i:hover {
 
 .button-wrapper a {
     pointer-events: auto;
+}
+
+.card {
+    background-color: $secondary;
+    color: $modals;
+    border: 1px solid $primary;
 }

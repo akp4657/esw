@@ -23,8 +23,7 @@ body
   section.page-section.cta-roster(style='margin-top: 45px;')
     .container
       h2.section-heading.mb-4
-        span.section-heading-upper Roster
-        span.section-heading-lower Champions
+        span.section-heading-lower(style='font-weight: 400; font-size: 3rem') Champions
 
   section.page-section
     .container
@@ -42,17 +41,16 @@ body
                   .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
                     p.card-text.mb-2(style='font-size: 0.85rem;')= wrestler.description
                     div.mt-auto
-                      h5.card-title.mb-0(style='font-size: 1rem;')= wrestler.name
+                      h5.card-title.mb-0(style='font-size: 1rem;font-weight:bold;')= wrestler.name
                 else
                   .card-body.p-2.d-flex.align-items-center.justify-content-center(style='flex-grow: 1;')
-                    h5.card-title.mb-0(style='font-size: 1rem;')= wrestler.name
+                    h5.card-title.mb-0(style='font-size: 1rem;font-weight:bold;')= wrestler.name
 
   // Base Wrestlers
   section.page-section.cta-roster(style='margin-top: -30px;')
     .container
       h2.section-heading.mb-4
-        span.section-heading-upper Roster
-        span.section-heading-lower Wrestlers
+        span.section-heading-lower(style='font-weight: 400; font-size: 3rem') Wrestlers
   section.page-section
     .container
       .row.row-cols-1.row-cols-md-5.g-3
@@ -69,18 +67,17 @@ body
                   .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
                     p.card-text.mb-2(style='font-size: 0.85rem;')= wrestler.description
                     div.mt-auto
-                      h5.card-title.mb-0(style='font-size: 1rem;')= wrestler.name
+                      h5.card-title.mb-0(style='font-size: 1rem;font-weight:bold;')= wrestler.name
                 else
                   .card-body.p-2.d-flex.align-items-center.justify-content-center(style='flex-grow: 1;')
-                    h5.card-title.mb-0(style='font-size: 1rem;')= wrestler.name
+                    h5.card-title.mb-0(style='font-size: 1rem;font-weight:bold;')= wrestler.name
 
 
   // Refs
   section.page-section.cta-roster(style='margin-top: -25px;')
     .container
       h2.section-heading.mb-4
-        span.section-heading-upper Roster
-        span.section-heading-lower Staff
+        span.section-heading-lower(style='font-weight: 400; font-size: 3rem') Staff
   section.page-section
     .container
       .row.row-cols-1.row-cols-md-5.g-4
@@ -94,7 +91,7 @@ body
                   style='height: 180px; object-fit: cover;'
                 )
                 .card-body.p-2.d-flex.align-items-center.justify-content-center(style='flex-grow: 1;')
-                  h5.card-title.mb-0(style='font-size: 1rem;')= wrestler.name
+                  h5.card-title.mb-0(style='font-size: 1rem;font-weight:bold;')= wrestler.name
                 
 
 include includes/footer
