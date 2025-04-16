@@ -57,9 +57,21 @@
         "image": "assets/img/OIP.jpg"
     },
     {
+        "name": "Cheech",
+        "category": "Wrestler",
+        "description": "To Infinity And Beyond",
+        "image": "assets/img/OIP.jpg"
+    },
+    {
         "name": "Christina Marie",
         "category": "Wrestler",
         "description": "ESW Women's Champion",
+        "image": "assets/img/OIP.jpg"
+    },
+    {
+        "name": "Colin Delaney",
+        "category": "Wrestler",
+        "description": "To Infinity And Beyond",
         "image": "assets/img/OIP.jpg"
     },
     {
@@ -144,6 +156,12 @@
         "name": "Maxx Cannon",
         "category": "Wrestler",
         "description": "",
+        "image": "assets/img/OIP.jpg"
+    },
+    {
+        "name": "Nick Ando",
+        "category": "Wrestler",
+        "description": "High Seas",
         "image": "assets/img/OIP.jpg"
     },
     {
