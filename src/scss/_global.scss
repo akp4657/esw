@@ -118,3 +118,18 @@ header {
     color: $modals;
     border: 1px solid $primary;
 }
+
+#title-history-cards {
+  padding: 20px;
+  max-width: 900px;          
+  margin: 0 auto;
+  text-align: center;
+}
+
+#title-history-cards h5 {
+    font-size: 2rem
+}
+
+#title-history-cards p {
+    font-size: 1.15rem
+}

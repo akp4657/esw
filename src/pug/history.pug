@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='Wrestling Roster Page')
+    meta(name='author', content='')
+
+    title ESW Roster
+
+    link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
+    include includes/css
+
+body
+  include includes/header
+  include includes/navbar
+  
+  // TODO: Need dynamic loading on wrestlers. This will be after the base site is put in place
+
+  // Champions
+  section.page-section(data-json='/js/heavyweight_history.json')
+    .container
+      h2.section-heading.text-left(style='color: #fff; text-align: center; margin-bottom: 50px') ESW Heavyweight Title History
+      #title-history-cards
+      #title-history-pagination.mt-3.text-center
+
+    script(src='/js/title-history.js')
+
+
+include includes/footer
+include includes/scripts
