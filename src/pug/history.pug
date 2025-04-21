@@ -1,33 +1,56 @@
 doctype html
 html(lang='en')
-
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     meta(name='description', content='Wrestling Roster Page')
     meta(name='author', content='')
 
-    title ESW Roster
+    title ESW Title History
 
     link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
     include includes/css
 
-body
-  include includes/header
-  include includes/navbar
-  
-  // TODO: Need dynamic loading on wrestlers. This will be after the base site is put in place
+  body
+    include includes/header
+    include includes/navbar
 
-  // Champions
-  section.page-section(data-json='/js/heavyweight_history.json')
-    .container
-      h2.section-heading.text-left(style='color: #fff; text-align: center; margin-bottom: 50px') ESW Heavyweight Title History
-      #title-history-cards
-      #title-history-pagination.mt-3.text-center
+    // Dropdown to switch title histories
+    .select-wrapper.text-center.mb-4
+      select#title-history-selector.form-select(style='width: 300px; margin: 0 auto;')
+        option(value='/js/heavyweight_history.json') ESW Heavyweight Championship
+        option(value='/js/interstate_history.json') ESW Interstate Championship
+        option(value='/js/tag_history.json') ESW Tag Team Championship
+        option(value='/js/womens_history.json') ESW Women's Championship
+
+    // Champions
+    section.page-section(data-json='/js/heavyweight_history.json')
+      .container
+        h2.section-heading.text-left(style='color: #fff; text-align: center; margin-bottom: 50px') ESW Heavyweight Title History
+        #title-history-cards
+        #title-history-pagination.mt-3.text-center
 
     script(src='/js/title-history.js')
 
+    script.
+      // Add event listener to the dropdown
+      document.getElementById('title-history-selector').addEventListener('change', function () {
+        const selectedJson = this.value;
+        const section = document.querySelector('section.page-section');
+        const heading = section.querySelector('h2.section-heading');
 
-include includes/footer
-include includes/scripts
+        // Update data-json attribute and heading
+        section.setAttribute('data-json', selectedJson);
+        heading.textContent = this.options[this.selectedIndex].text + ' History';
+
+        // Reload content
+        if (typeof loadTitleHistory === 'function') {
+          loadTitleHistory(selectedJson);
+        } else {
+          console.warn('loadTitleHistory function not found. Please define it in /js/title-history.js');
+        }
+      });
+
+    include includes/footer
+    include includes/scripts

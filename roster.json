@@ -3,25 +3,29 @@
       "name": "Vince Valor",
       "category": "Champion",
       "description": "ESW Heavyweight Champion",
-      "image": "assets/img/OIP.jpg"
+      "image": "assets/img/OIP.jpg",
+      "titleSlug": "heavyweight"
     },
     {
         "name": "James Sayga",
         "category": "Champion",
         "description": "ESW Interstate Champion",
-        "image": "assets/img/OIP.jpg"
+        "image": "assets/img/OIP.jpg",
+        "titleSlug": "interstate"
     },
     {
         "name": "To Infinity And Beyond",
         "category": "Champion",
         "description": "ESW Tag Team Champions",
-        "image": "assets/img/OIP.jpg"
+        "image": "assets/img/OIP.jpg",
+        "titleSlug": "tag"
     },
     {
         "name": "Christina Marie",
         "category": "Champion",
         "description": "ESW Women's Champion",
-        "image": "assets/img/OIP.jpg"
+        "image": "assets/img/OIP.jpg",
+        "titleSlug": "womens"
     },
   
 
@@ -260,7 +264,7 @@
     {
         "name": "Ryan Rice",
         "category": "Staff",
-        "description": "",
+        "description": "Ref",
         "image": "assets/img/OIP.jpg"
     }
   ]
