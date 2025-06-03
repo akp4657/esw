@@ -10946,6 +10946,13 @@ header {
   font-size: 1.15rem;
 }
 
+#has-image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: scale(1.15) translateY(150px);
+  transition: transform 0.3s ease;
+}
+
 .btn-xl {
   font-weight: 700;
   font-size: 0.8rem;

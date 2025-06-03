@@ -133,3 +133,10 @@ header {
 #title-history-cards p {
     font-size: 1.15rem
 }
+
+  #has-image  {
+  object-fit: cover;
+  height: 180px;
+  transform: scale(1.15) translateY(10px);
+  transition: transform 0.3s ease;
+}

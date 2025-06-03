@@ -35,7 +35,8 @@ body
                 img.card-img-top(
                   src=wrestler.image,
                   alt=wrestler.name,
-                  style='height: 180px; object-fit: cover;'
+                  style='height: 180px; object-fit: cover;',
+                  onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
                 )
                 if wrestler.description
                   .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
@@ -57,7 +58,9 @@ body
                 img.card-img-top(
                   src=wrestler.image,
                   alt=wrestler.name,
-                  style='height: 180px; object-fit: cover;'
+                  id=wrestler.image ? 'has-image' : 'no-image',
+                  style='height: 180px; object-fit: cover;',
+                  onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
                 )
                 .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
                   if wrestler.description
@@ -79,7 +82,9 @@ body
                 img.card-img-top(
                   src=wrestler.image,
                   alt=wrestler.name,
-                  style='height: 180px; object-fit: cover;'
+                  id=wrestler.image ? 'has-image' : 'no-image',
+                  style='height: 180px; object-fit: cover;',
+                  onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
                 )
                 .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
                   if wrestler.description
