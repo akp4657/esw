@@ -32,12 +32,14 @@ body
           if wrestler.category === 'Champion'
             .col
               .card.text-center(style='height: 100%; display: flex; flex-direction: column; border-radius: 0.5rem; overflow: hidden;')
-                img.card-img-top(
-                  src=wrestler.image,
-                  alt=wrestler.name,
-                  style='height: 180px; object-fit: cover;',
-                  onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
-                )
+                .image-wrapper(style='height: 180px; position: relative; overflow: hidden;')
+                  img.card-img-top(
+                    src=wrestler.image,
+                    alt=wrestler.name,
+                    id=wrestler.name,
+                    style='style="position: absolute; transform: translateX(-50%) TranslateY(10%) scale(1.2)"',
+                    onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
+                  )
                 if wrestler.description
                   .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
                     p.card-text.mb-2(style='font-size: 0.85rem;')= wrestler.description
@@ -47,6 +49,12 @@ body
                   .card-body.p-2.d-flex.align-items-center.justify-content-center(style='flex-grow: 1;')
                     h5.card-title.mb-0(style='font-size: 1rem;font-weight:bold;')= wrestler.name
 
+  // Champions
+  section.page-section.cta-roster(style='margin-top: 45px;')
+    .container
+      h2.section-heading.mb-4
+        span.section-heading-lower(style='font-weight: 400; font-size: 3rem') Wrestlers
+
   // For Wrestlers
   section.page-section
     .container
@@ -55,13 +63,14 @@ body
           if wrestler.category === 'Wrestler'
             .col
               .card.text-center(style='height: 100%; display: flex; flex-direction: column; border-radius: 0.5rem; overflow: hidden;')
-                img.card-img-top(
-                  src=wrestler.image,
-                  alt=wrestler.name,
-                  id=wrestler.image ? 'has-image' : 'no-image',
-                  style='height: 180px; object-fit: cover;',
-                  onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
-                )
+                .image-wrapper(style='height: 180px; position: relative; overflow: hidden;')
+                  img.card-img-top(
+                    src=wrestler.image,
+                    alt=wrestler.name,
+                    id=wrestler.name,
+                    style='style="position: absolute; transform: translateX(-50%) TranslateY(10%) scale(1.4)"',
+                    onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
+                  )
                 .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
                   if wrestler.description
                     p.card-text.mb-2(style='font-size: 0.85rem;')= wrestler.description
@@ -71,6 +80,12 @@ body
                     .card-body.p-2.d-flex.align-items-center.justify-content-center(style='flex-grow: 1;')
                       h5.card-title.mb-0(style='font-size: 1rem; font-weight: bold;')= wrestler.name
 
+  // Champions
+  section.page-section.cta-roster(style='margin-top: 45px;')
+    .container
+      h2.section-heading.mb-4
+        span.section-heading-lower(style='font-weight: 400; font-size: 3rem') Staff
+  
   // For Staff
   section.page-section
     .container
@@ -79,13 +94,14 @@ body
           if wrestler.category === 'Staff'
             .col
               .card.text-center(style='height: 100%; display: flex; flex-direction: column; border-radius: 0.5rem; overflow: hidden;')
-                img.card-img-top(
-                  src=wrestler.image,
-                  alt=wrestler.name,
-                  id=wrestler.image ? 'has-image' : 'no-image',
-                  style='height: 180px; object-fit: cover;',
-                  onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
-                )
+                .image-wrapper(style='height: 180px; position: relative; overflow: hidden;')
+                  img.card-img-top(
+                    src=wrestler.image,
+                    alt=wrestler.name,
+                    id=wrestler.name,
+                    style='style="position: absolute; transform: translateX(-50%) TranslateY(10%) scale(1.2)"',
+                    onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
+                  )
                 .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
                   if wrestler.description
                     p.card-text.mb-2(style='font-size: 0.85rem;')= wrestler.description
