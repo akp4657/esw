@@ -36,7 +36,7 @@ body
                   img.card-img-top(
                     src=wrestler.image,
                     alt=wrestler.name,
-                    id=wrestler.name,
+                    id= `ch-${wrestler.image.split('/').pop().split('.')[0]}`,
                     style='style="position: absolute; transform: translateX(-50%) TranslateY(10%) scale(1.2)"',
                     onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
                   )
@@ -67,7 +67,7 @@ body
                   img.card-img-top(
                     src=wrestler.image,
                     alt=wrestler.name,
-                    id=wrestler.name,
+                    id=wrestler.image.split('/').pop().split('.')[0],
                     style='style="position: absolute; transform: translateX(-50%) TranslateY(10%) scale(1.4)"',
                     onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
                   )
@@ -98,7 +98,7 @@ body
                   img.card-img-top(
                     src=wrestler.image,
                     alt=wrestler.name,
-                    id=wrestler.name,
+                    id=wrestler.image.split('/').pop().split('.')[0],
                     style='style="position: absolute; transform: translateX(-50%) TranslateY(10%) scale(1.2)"',
                     onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
                   )
