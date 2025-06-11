@@ -3,7 +3,8 @@
       "name": "Vince Valor",
       "category": "Champion",
       "description": "ESW Heavyweight Champion",
-      "image": "assets/img/roster/Vince_Valor.jpg",
+      "image": "https://imgur.com/a/vince-valor-okxgc2R",
+      "id": "Vince_Valor",
       "titleSlug": "heavyweight"
     },
     {
