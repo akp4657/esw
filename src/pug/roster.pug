@@ -100,7 +100,7 @@ body
                     alt=wrestler.name,
                     id=wrestler.image.split('/').pop().split('.')[0],
                     style='style="position: absolute; transform: translateX(-50%) TranslateY(10%) scale(1.2)"',
-                    onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
+                    onerror="this.onerror=null;this.src='assets/img/OIP.jpg';this.id='OIP'"
                   )
                 .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
                   if wrestler.description

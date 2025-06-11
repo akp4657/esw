@@ -11074,6 +11074,10 @@ header {
   transform: scale(6.1) translateY(32%) translateX(-3%);
 }
 
+#OIP {
+  transform: translateY(-15%) translateX(0%);
+}
+
 .btn-xl {
   font-weight: 700;
   font-size: 0.8rem;
