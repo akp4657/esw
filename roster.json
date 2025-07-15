@@ -3,7 +3,7 @@
       "name": "Vince Valor",
       "category": "Champion",
       "description": "ESW Heavyweight Champion",
-      "image": "assets/img/roster/Vince_Valor.jpg",
+      "image": "/assets/img/roster/Vince_Valor.jpg",
       "id": "Vince_Valor",
       "titleSlug": "heavyweight"
     },
@@ -11,21 +11,21 @@
         "name": "James Sayga",
         "category": "Champion",
         "description": "ESW Interstate Champion",
-        "image": "assets/img/roster/James_Sayga.jpg",
+        "image": "/assets/img/roster/James_Sayga.jpg",
         "titleSlug": "interstate"
     },
     {
         "name": "To Infinity And Beyond",
         "category": "Champion",
         "description": "ESW Tag Team Champions",
-        "image": "assets/img/roster/2_Infinity_Champ.jpg",
+        "image": "/assets/img/roster/2_Infinity_Champ.jpg",
         "titleSlug": "tag"
     },
     {
         "name": "Christina Marie",
         "category": "Champion",
         "description": "ESW Women's Champion",
-        "image": "assets/img/roster/Christina_Marie.jpg",
+        "image": "/assets/img/roster/Christina_Marie.jpg",
         "titleSlug": "womens"
     },
   
@@ -35,235 +35,235 @@
     "name": "Bill Collier",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Bill_Collier.jpg"
+    "image": "/assets/img/roster/Bill_Collier.jpg"
     },
     {
     "name": "Brennen I",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Brennen_I.jpg"
+    "image": "/assets/img/roster/Brennen_I.jpg"
     },
     {
     "name": "Cal Keaton",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Cal_Keaton.jpg"
+    "image": "/assets/img/roster/Cal_Keaton.jpg"
     },
     {
     "name": "Cerin Rahne",
     "category": "Wrestler",
     "description": "Edge Of Hope",
-    "image": "assets/img/roster/Cerin_Rahne.jpg"
+    "image": "/assets/img/roster/Cerin_Rahne.jpg"
     },
     {
     "name": "Chael Connors",
     "category": "Wrestler",
     "description": "CXR",
-    "image": "assets/img/roster/Chael_Connors.jpg"
+    "image": "/assets/img/roster/Chael_Connors.jpg"
     },
     {
     "name": "Cheech",
     "category": "Wrestler",
     "description": "To Infinity And Beyond",
-    "image": "assets/img/roster/Cheech.jpg"
+    "image": "/assets/img/roster/Cheech.jpg"
     },
     {
     "name": "Christina Marie",
     "category": "Wrestler",
     "description": "ESW Women's Champion",
-    "image": "assets/img/roster/Christina_Marie.jpg"
+    "image": "/assets/img/roster/Christina_Marie.jpg"
     },
     {
     "name": "Colin Delaney",
     "category": "Wrestler",
     "description": "To Infinity And Beyond",
-    "image": "assets/img/roster/Colin_Delaney.jpg"
+    "image": "/assets/img/roster/Colin_Delaney.jpg"
     },
     {
     "name": "Cloudy",
     "category": "Wrestler",
     "description": "High Seas",
-    "image": "assets/img/roster/Cloudy.jpg"
+    "image": "/assets/img/roster/Cloudy.jpg"
     },
     {
     "name": "Darren Crowe",
     "category": "Wrestler",
     "description": "Edge of Hope",
-    "image": "assets/img/roster/Darren_Crowe.jpg"
+    "image": "/assets/img/roster/Darren_Crowe.jpg"
     },
     {
     "name": "Frank Feathers",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Frank_Feathers.jpg"
+    "image": "/assets/img/roster/Frank_Feathers.jpg"
     },
     {
     "name": "Gavin Glass",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Gavin_Glass.jpg"
+    "image": "/assets/img/roster/Gavin_Glass.jpg"
     },
     {
     "name": "Gregory Iron",
     "category": "Wrestler",
     "description": "Ilio DiPaolo Cup Holder",
-    "image": "assets/img/roster/Gregory_Iron.jpg"
+    "image": "/assets/img/roster/Gregory_Iron.jpg"
     },
     {
     "name": "Groff",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Groff.jpg"
+    "image": "/assets/img/roster/Groff.jpg"
     },
     {
     "name": "James Sayga",
     "category": "Wrestler",
     "description": "ESW Interstate Champion",
-    "image": "assets/img/roster/James_Sayga.jpg"
+    "image": "/assets/img/roster/James_Sayga.jpg"
     },
     {
     "name": "Jeremiah Richter",
     "category": "Wrestler",
     "description": "Edge of Hope",
-    "image": "assets/img/roster/Jeremiah_Richter.jpg"
+    "image": "/assets/img/roster/Jeremiah_Richter.jpg"
     },
     {
     "name": "Keenan Moore",
     "category": "Wrestler",
     "description": "St★rburst",
-    "image": "assets/img/roster/Keenan_Moore.jpg"
+    "image": "/assets/img/roster/Keenan_Moore.jpg"
     },
     {
     "name": "Kenny St★r",
     "category": "Wrestler",
     "description": "St★rburst",
-    "image": "assets/img/roster/Kenny_Star.jpg"
+    "image": "/assets/img/roster/Kenny_Star.jpg"
     },
     {
     "name": "Kevin Bennett",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Kevin_Bennett.JPG"
+    "image": "/assets/img/roster/Kevin_Bennett.JPG"
     },
     {
     "name": "Mattick",
     "category": "Wrestler",
     "description": "Edge of Hope",
-    "image": "assets/img/roster/Mattick.jpg"
+    "image": "/assets/img/roster/Mattick.jpg"
     },
     {
     "name": "Matt McCoy",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Matt_McCoy.jpg"
+    "image": "/assets/img/roster/Matt_McCoy.jpg"
     },
     {
     "name": "Maxx Cannon",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Maxx_Cannon.jpg"
+    "image": "/assets/img/roster/Maxx_Cannon.jpg"
     },
     {
     "name": "Nick Ando",
     "category": "Wrestler",
     "description": "High Seas",
-    "image": "assets/img/roster/Nick_Ando.JPG"
+    "image": "/assets/img/roster/Nick_Ando.JPG"
     },
     {
     "name": "Robby Vegas",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Robby_Vegas.jpg"
+    "image": "/assets/img/roster/Robby_Vegas.jpg"
     },
     {
     "name": "Tommy K",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Tommy_K.jpg"
+    "image": "/assets/img/roster/Tommy_K.jpg"
     },
     {
     "name": "Spencer Slade",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Spencer_Slade.jpg"
+    "image": "/assets/img/roster/Spencer_Slade.jpg"
     },
     {
     "name": "TJ Epixx",
     "category": "Wrestler",
     "description": "CXR",
-    "image": "assets/img/roster/TJ_Epixx.jpg"
+    "image": "/assets/img/roster/TJ_Epixx.jpg"
     },
     {
     "name": "Vince Valor",
     "category": "Wrestler",
     "description": "ESW Heavyweight Champion",
-    "image": "assets/img/roster/Vince_Valor.jpg"
+    "image": "/assets/img/roster/Vince_Valor.jpg"
     },
     {
     "name": "Vinnie Moon",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Vinnie_Moon.jpg"
+    "image": "/assets/img/roster/Vinnie_Moon.jpg"
     },
     {
     "name": "William Gaines",
     "category": "Wrestler",
     "description": "Superbeast",
-    "image": "assets/img/roster/William_Gaines.jpg"
+    "image": "/assets/img/roster/William_Gaines.jpg"
     },
     {
     "name": "Will Calrissian",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/roster/Will_Calrissian.jpg"
+    "image": "/assets/img/roster/Will_Calrissian.jpg"
     },
     {
     "name": "Chris Gullo",
     "category": "Staff",
     "description": "",
-    "image": "assets/img/roster/Chris_Gullo.jpg"
+    "image": "/assets/img/roster/Chris_Gullo.jpg"
     },
     {
     "name": "D.J. Jarka",
     "category": "Staff",
     "description": "",
-    "image": "assets/img/roster/Ref_DJ_Jarka.jpg"
+    "image": "/assets/img/roster/Ref_DJ_Jarka.jpg"
     },
     {
     "name": "Jimmy Hills",
     "category": "Staff",
     "description": "",
-    "image": "assets/img/roster/Jimmy_Hills.jpg"
+    "image": "/assets/img/roster/Jimmy_Hills.jpg"
     },
     {
     "name": "Johnathan Ashe",
     "category": "Staff",
     "description": "",
-    "image": "assets/img/roster/Johnathan_Ashe.jpg"
+    "image": "/assets/img/roster/Johnathan_Ashe.jpg"
     },
     {
     "name": "Lou Medina",
     "category": "Staff",
     "description": "",
-    "image": "assets/img/roster/Lou_Medina.jpg"
+    "image": "/assets/img/roster/Lou_Medina.jpg"
     },
     {
     "name": "Richard Head",
     "category": "Staff",
     "description": "",
-    "image": "assets/img/roster/Ref_Richard_Head.jpg"
+    "image": "/assets/img/roster/Ref_Richard_Head.jpg"
     },
     {
     "name": "Rob Sanderson",
     "category": "Staff",
     "description": "",
-    "image": "assets/img/roster/Rob_Sanderson.jpg"
+    "image": "/assets/img/roster/Rob_Sanderson.jpg"
     },
     {
     "name": "Ryan Rice",
     "category": "Staff",
     "description": "Ref",
-    "image": "assets/img/roster/Ryan_Rice.jpg"
+    "image": "/assets/img/roster/Ryan_Rice.jpg"
     }
 
   ]
