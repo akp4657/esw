@@ -3,7 +3,3 @@ window.addEventListener('DOMContentLoaded', event => {
     const listHoursArray = document.body.querySelectorAll('.list-hours li');
     listHoursArray[new Date().getDay()].classList.add(('today'));
 })
-
-// Vercel Analytics
-import { inject } from '@vercel/analytics';
-inject();
