@@ -6,8 +6,6 @@ const pug = require('pug');
 const fs = require('fs');
 
 const wrestlers = JSON.parse(fs.readFileSync('./roster.json', 'utf8'));
-console.log(wrestlers)
-
 const srcPath = upath.resolve(upath.dirname(__filename), '../src');
 
 sh.find(srcPath).forEach(_processFile);
