@@ -1,10 +1,10 @@
 [
   {
-    "name": "Vince Valor",
+    "name": "Gregory Iron",
     "category": "Champion",
     "description": "ESW Heavyweight Champion",
-    "image": "assets/img/roster/Vince_Valor.jpg",
-    "id": "Vince_Valor",
+    "image": "assets/img/roster/Gregory_Iron.jpg",
+    "id": "Gregory_Iron",
     "titleSlug": "heavyweight"
   },
   {
@@ -34,7 +34,7 @@
   {
     "name": "Adam Wacker",
     "category": "Wrestler",
-    "description": "",
+    "description": "Criterion",
     "image": "assets/img/roster/Adam_Wacker.png"
   },
   {
@@ -52,7 +52,7 @@
   {
     "name": "Cal Keaton",
     "category": "Wrestler",
-    "description": "",
+    "description": "Criterion",
     "image": "assets/img/roster/Cal_Keaton.jpg"
   },
   {
@@ -112,7 +112,7 @@
   {
     "name": "Gregory Iron",
     "category": "Wrestler",
-    "description": "Ilio DiPaolo Cup Holder",
+    "description": "ESW Heavyweight Champion",
     "image": "assets/img/roster/Gregory_Iron.jpg"
   },
   {
@@ -202,7 +202,7 @@
   {
     "name": "Vince Valor",
     "category": "Wrestler",
-    "description": "ESW Heavyweight Champion",
+    "description": "",
     "image": "assets/img/roster/Vince_Valor.jpg"
   },
   {

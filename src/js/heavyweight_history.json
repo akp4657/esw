@@ -1,9 +1,16 @@
 [
   {
+    "name": "Gregory Iron",
+    "category": "Heavyweight",
+    "startDate": "11/21/2025",
+    "endDate": "",
+    "image": "assets/img/OIP.jpg"
+  },
+  {
     "name": "Vince Valor (2)",
     "category": "Heavyweight",
     "startDate": "11/22/2024",
-    "endDate": "",
+    "endDate": "11/21/2025",
     "image": "assets/img/OIP.jpg"
   },
   {
