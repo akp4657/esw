@@ -2,17 +2,10 @@ doctype html
 html(lang='en')
 
     head
-
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Empire State Wrestling
-
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
-
+        - var pageTitle = 'Empire State Wrestling – Buffalo Pro Wrestling | ESW'
+        - var pageDescription = 'Empire State Wrestling is Western New York\'s premier independent pro wrestling promotion. Family-friendly events since 2002. See roster, events & tickets.'
+        - var canonicalPath = ''
+        include includes/head-seo
         include includes/css
 
     body
@@ -57,13 +50,13 @@ html(lang='en')
                                 img.d-block.w-100(src='assets/img/toughluck26.jpg', alt='ESW Tough Luck 2026')
                         .carousel-item
                             a(href='https://independentwrestling.tv/promotion/empire-state' target="_blank")
-                                img.d-block.w-100(src='assets/img/eswpromo1.jpg', alt='Watch ESW on IWTV!')
+                                img.d-block.w-100(src='assets/img/eswpromo1.jpg', alt='Watch ESW on IWTV!', loading='lazy')
                         .carousel-item
                             a(href='https://www.prowrestlingtees.com/promotion-tshirts/eswwrestling.html' target="_blank")
-                                img.d-block.w-100(src='assets/img/eswpromo2.jpg', alt='New ESW Merch!')
+                                img.d-block.w-100(src='assets/img/eswpromo2.jpg', alt='New ESW Merch!', loading='lazy')
                         .carousel-item
                             a(href='https://linktr.ee/eswwrestling' target="_blank")
-                                img.d-block.w-100(src='assets/img/eswpromo3.jpg', alt='All ESW Links!')
+                                img.d-block.w-100(src='assets/img/eswpromo3.jpg', alt='All ESW Links!', loading='lazy')
 
                     .carousel-control-prev(href='#carouselExampleIndicators', role='button', data-bs-slide='prev')
                         span.carousel-control-prev-icon(aria-hidden='true')

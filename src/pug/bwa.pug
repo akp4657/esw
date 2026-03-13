@@ -2,17 +2,10 @@ doctype html
 html(lang='en')
 
     head
-
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title BWA Training
-
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
-
+        - var pageTitle = 'BWA Training – Buffalo Wrestling Academy | Empire State Wrestling'
+        - var pageDescription = 'Buffalo Wrestling Academy: pro wrestling school in WNY. Train with Vince Valor and Robby Vegas. Wrestlers, refs, managers welcome.'
+        - var canonicalPath = 'bwa.html'
+        include includes/head-seo
         include includes/css
 
     body(class='bwa-page')
@@ -42,11 +35,11 @@ html(lang='en')
                         .carousel-item.active
                             img.d-block.w-100(src='assets/img/bwa/bwa.jpg', alt='Buffalo Wrestling Academy Logo')
                         .carousel-item
-                            img.d-block.w-100(src='assets/img/bwa/bwa7.jpg', alt='Buffalo Wrestling Academy')
+                            img.d-block.w-100(src='assets/img/bwa/bwa7.jpg', alt='Buffalo Wrestling Academy', loading='lazy')
                         .carousel-item
-                            img.d-block.w-100(src='assets/img/bwa/bwa1.jpg', alt='Two students training')
+                            img.d-block.w-100(src='assets/img/bwa/bwa1.jpg', alt='Two students training', loading='lazy')
                         .carousel-item
-                            img.d-block.w-100(src='assets/img/bwa/bwa6.jpg', alt='Two students listening in on a lesson')
+                            img.d-block.w-100(src='assets/img/bwa/bwa6.jpg', alt='Two students listening in on a lesson', loading='lazy')
 
                     .carousel-control-prev(href='#carouselExampleIndicators', role='button', data-bs-slide='prev')
                         span.carousel-control-prev-icon(aria-hidden='true')
@@ -70,7 +63,7 @@ html(lang='en')
         section.page-section.clearfix
             .container
                 .intro
-                    img.intro-img.img-fluid.mb-3.mb-lg-0.rounded(src='assets/img/bwa/vince.jpg', alt='...')
+                    img.intro-img.img-fluid.mb-3.mb-lg-0.rounded(src='assets/img/bwa/vince.jpg', alt='Vince Valor, head trainer at Buffalo Wrestling Academy')
                     .intro-text.left-0.text-center.bg-faded.p-5.rounded
                         h2.section-heading.mb-4
                             span.section-heading-upper Head Trainer
@@ -90,7 +83,7 @@ html(lang='en')
         section.page-section.clearfix
             .container
                 .intro.d-flex.flex-column.flex-lg-row-reverse
-                    img.intro-img.img-fluid.mb-3.mb-lg-0.rounded(src='assets/img/bwa/robby.jpg', alt='...')
+                    img.intro-img.img-fluid.mb-3.mb-lg-0.rounded(src='assets/img/bwa/robby.jpg', alt='Robby Vegas, trainer at Buffalo Wrestling Academy')
                     .intro-text.right-0.text-center.bg-faded.p-5.rounded
                         h2.section-heading.mb-4
                             span.section-heading-upper Trainer

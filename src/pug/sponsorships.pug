@@ -2,17 +2,10 @@ doctype html
 html(lang='en')
 
     head
-
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Sponsor ESW
-
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
-
+        - var pageTitle = 'Sponsor ESW – Brand Exposure in WNY Wrestling | Empire State Wrestling'
+        - var pageDescription = 'Sponsor Empire State Wrestling. Reach hundreds of diehard wrestling fans at ESW events across Western New York.'
+        - var canonicalPath = 'sponsorships.html'
+        include includes/head-seo
         include includes/css
 
     body

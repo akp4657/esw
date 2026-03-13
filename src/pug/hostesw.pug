@@ -2,17 +2,10 @@ doctype html
 html(lang='en')
 
     head
-
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Host ESW
-
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
-
+        - var pageTitle = 'Host ESW – Book Pro Wrestling in WNY | Empire State Wrestling'
+        - var pageDescription = 'Host Empire State Wrestling at your venue. Buffalo\'s premier indie wrestling has drawn 1,000+ fans. Book ESW for your event.'
+        - var canonicalPath = 'hostesw.html'
+        include includes/head-seo
         include includes/css
 
     body

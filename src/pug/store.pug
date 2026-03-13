@@ -2,17 +2,10 @@ doctype html
 html(lang='en')
 
     head
-
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Business Casual - Start Bootstrap Theme
-
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
-
+        - var pageTitle = 'ESW Store – Official Empire State Wrestling Merchandise'
+        - var pageDescription = 'Shop official Empire State Wrestling merch. T-shirts and more from Western New York\'s premier indie wrestling promotion.'
+        - var canonicalPath = 'store.html'
+        include includes/head-seo
         include includes/css
 
     body
@@ -28,7 +21,7 @@ html(lang='en')
                     .col-xl-9.mx-auto
                         .cta-inner.bg-faded.text-center.rounded
                             h2.section-heading.mb-5
-                                span.section-heading-upper Come On In
+                                span.section-heading-upper Official ESW Merch
                                 span.section-heading-lower We're Open
                             ul.list-unstyled.list-hours.mb-5.text-left.mx-auto
                                 li.list-unstyled-item.list-hours-item.d-flex
@@ -54,31 +47,28 @@ html(lang='en')
                                     span.ms-auto 9:00 AM to 5:00 PM
                             p.address.mb-5
                                 em
-                                    strong 1116 Orchard Street
+                                    strong Shop online at Pro Wrestling Tees
                                     br
-                                    | Golden Valley, Minnesota
+                                    | ESW official merchandise
                             p.mb-0
                                 small
-                                    em Call Anytime
-                                br
-                                | (317) 585-8468
+                                    em
+                                        a(href='https://www.prowrestlingtees.com/promotion-tshirts/eswwrestling.html', target='_blank', rel='noopener') prowrestlingtees.com/promotion-tshirts/eswwrestling
 
         section.page-section.about-heading
             .container
-                img.img-fluid.rounded.about-heading-img.mb-3.mb-lg-0(src='assets/img/about.jpg', alt='...')
+                img.img-fluid.rounded.about-heading-img.mb-3.mb-lg-0(src='assets/img/about.jpg', alt='Empire State Wrestling merchandise')
                 .about-heading-content
                     .row
                         .col-xl-9.col-lg-10.mx-auto
                             .bg-faded.rounded.p-5
                                 h2.section-heading.mb-4
-                                    span.section-heading-upper Strong Coffee, Strong Roots
-                                    span.section-heading-lower About Our Cafe
+                                    span.section-heading-upper Rep Your Promotion
+                                    span.section-heading-lower About ESW Merchandise
                                 p
-                                    | Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.
+                                    | Show your support for Empire State Wrestling with official ESW gear. From event tees to classic logos, shop the full lineup at Pro Wrestling Tees and wear Buffalo's premier pro wrestling wherever you go.
                                 p.mb-0
-                                    | We guarantee that you will fall in
-                                    em lust
-                                    | with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.
+                                    | New designs and restocks are added regularly. Follow ESW on social media for drops and event-exclusive merch.
 
         include includes/footer
 

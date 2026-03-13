@@ -1,0 +1,4 @@
+//- JSON-LD Organization schema. Expects baseUrl from build locals.
+- var orgUrl = (typeof baseUrl !== 'undefined' && baseUrl) ? baseUrl.replace(/\/$/, '') : ''
+- var orgJson = JSON.stringify({"@context":"https://schema.org","@type":"Organization","name":"Empire State Wrestling","url":orgUrl,"logo":orgUrl + "/assets/img/banner.jpg","description":"Western New York's premier independent professional wrestling promotion. Family-friendly events since 2002.","sameAs":["https://www.facebook.com/ESWwrestling/","https://x.com/eswwrestling","https://www.instagram.com/eswwrestling","https://www.youtube.com/@eswwrestling","https://www.linkedin.com/company/eswwrestling/"]})
+script(type='application/ld+json')= orgJson

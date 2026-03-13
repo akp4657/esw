@@ -7,6 +7,7 @@ const fs = require('fs');
 
 const wrestlers = JSON.parse(fs.readFileSync('./roster.json', 'utf8'));
 const srcPath = upath.resolve(upath.dirname(__filename), '../src');
+const baseUrl = process.env.SITE_BASE_URL || 'https://eswwrestling.com';
 
 sh.find(srcPath).forEach(_processFile);
 
@@ -17,10 +18,10 @@ function _processFile(filePath) {
         && !filePath.match(/mixin/)
         && !filePath.match(/\/pug\/layouts\//)
     ) {
+        const locals = { baseUrl };
         if (filePath.endsWith('roster.pug')) {
-            renderPug(filePath, { wrestlers });
-        } else {
-            renderPug(filePath);
+            locals.wrestlers = wrestlers;
         }
+        renderPug(filePath, locals);
     }
 }

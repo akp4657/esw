@@ -2,15 +2,10 @@ doctype html
 html(lang='en')
 
   head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    meta(name='description', content='Wrestling Roster Page')
-    meta(name='author', content='')
-
-    title ESW Roster
-
-    link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
+    - var pageTitle = 'ESW Roster – Wrestlers, Champions & Staff | Empire State Wrestling'
+    - var pageDescription = 'Meet the Empire State Wrestling roster: champions, wrestlers, and staff. Buffalo\'s premier independent wrestling talent.'
+    - var canonicalPath = 'roster.html'
+    include includes/head-seo
     include includes/css
 
 body
@@ -38,7 +33,8 @@ body
                     alt=wrestler.name,
                     id= `ch-${wrestler.image.split('/').pop().split('.')[0]}`,
                     style='style="position: absolute; transform: translateX(-50%) TranslateY(10%) scale(1.2)"',
-                    onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
+                    onerror="this.onerror=null;this.src='assets/img/OIP.jpg';",
+                    loading='lazy'
                   )
                 if wrestler.description
                   .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
@@ -69,7 +65,8 @@ body
                     alt=wrestler.name,
                     id=wrestler.image.split('/').pop().split('.')[0],
                     style='style="position: absolute; transform: translateX(-50%) TranslateY(10%) scale(1.4)"',
-                    onerror="this.onerror=null;this.src='assets/img/OIP.jpg';"
+                    onerror="this.onerror=null;this.src='assets/img/OIP.jpg';",
+                    loading='lazy'
                   )
                 .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
                   if wrestler.description
@@ -100,7 +97,8 @@ body
                     alt=wrestler.name,
                     id=wrestler.image.split('/').pop().split('.')[0],
                     style='style="position: absolute; transform: translateX(-50%) TranslateY(10%) scale(1.2)"',
-                    onerror="this.onerror=null;this.src='assets/img/OIP.jpg';this.id='OIP'"
+                    onerror="this.onerror=null;this.src='assets/img/OIP.jpg';this.id='OIP'",
+                    loading='lazy'
                   )
                 .card-body.p-2.d-flex.flex-column.justify-content-between(style='flex-grow: 1;')
                   if wrestler.description
