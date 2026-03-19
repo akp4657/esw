@@ -1,9 +1,16 @@
 [
+    {
+    "name": "VACANT",
+    "category": "Tag Team",
+    "startDate": "03/06/2026",
+    "endDate": "",
+    "image": "assets/img/OIP.jpg"
+  },
   {
     "name": "To Infinity And Beyond (Cheech & Colin Delaney)",
     "category": "Tag Team",
     "startDate": "11/22/2024",
-    "endDate": "",
+    "endDate": "03/06/2026",
     "image": "assets/img/OIP.jpg"
   },
   {
