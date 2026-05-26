@@ -22,6 +22,38 @@
     }
 }
 
+.esw-framed {
+    position: relative;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: 3px solid $primary;
+
+    &:before {
+        border-radius: 0.5rem;
+        content: '';
+        position: absolute;
+        top: -0.7rem;
+        bottom: -0.7rem;
+        left: -0.7rem;
+        right: -0.7rem;
+        border: 0.27rem solid $modals;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    > img {
+        display: block;
+        width: 100%;
+        border-radius: calc(0.5rem - 3px);
+    }
+
+    > .carousel {
+        border-radius: calc(0.5rem - 3px);
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+}
+
 .cta-roster {
     // width: 700px;
     margin-bottom: -75px;

@@ -1,8 +1,14 @@
 [
   {
+    "name": "Chris Cooper",
+    "startDate": "05/08/2026",
+    "endDate": "",
+    "image": "assets/img/OIP.jpg"
+  },
+  {
     "name": "James Sayga",
     "startDate": "11/22/2024",
-    "endDate": "",
+    "endDate": "05/08/2026",
     "image": "assets/img/OIP.jpg"
   },
   {

@@ -8,14 +8,14 @@
     "titleSlug": "heavyweight"
   },
   {
-    "name": "James Sayga",
+    "name": "Chris Cooper",
     "category": "Champion",
     "description": "ESW Interstate Champion",
-    "image": "assets/img/roster/James_Sayga.jpg",
+    "image": "assets/img/OIP.jpg",
     "titleSlug": "interstate"
   },
   {
-    "name": "VACANT ",
+    "name": "Edge of Hope",
     "category": "Champion",
     "description": "ESW Tag Team Champions",
     "image": "assets/img/OIP.jpg",
@@ -74,6 +74,12 @@
     "image": "assets/img/roster/Cheech.jpg"
   },
   {
+    "name": "Chris Cooper",
+    "category": "Wrestler",
+    "description": "ESW Interstate Champion",
+    "image": "assets/img/OIP.jpg"
+  },
+  {
     "name": "Christina Marie",
     "category": "Wrestler",
     "description": "ESW Women's Champion",
@@ -124,7 +130,7 @@
   {
     "name": "James Sayga",
     "category": "Wrestler",
-    "description": "ESW Interstate Champion",
+    "description": "",
     "image": "assets/img/roster/James_Sayga.jpg"
   },
   {
@@ -223,6 +229,12 @@
     "description": "Honkin' n Bonkin'",
     "image": "assets/img/roster/Will_Calrissian.jpg"
   },
+  {
+    "name": "Witch Doctor",
+    "category": "Wrestler",
+    "description": "",
+    "image": "assets/img/OIP.jpg"
+  },
 
 
   {
@@ -242,6 +254,12 @@
     "category": "Staff",
     "description": "",
     "image": "assets/img/roster/Ref_DJ_Jarka.jpg"
+  },
+  {
+    "name": "Dr. William Issac Thomas Christopher Henderson",
+    "category": "Staff",
+    "description": "",
+    "image": "assets/img/OIP.jpg"
   },
   {
     "name": "AJ",

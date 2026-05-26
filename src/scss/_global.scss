@@ -40,6 +40,10 @@ body.bwa-page {
     .bg-faded {
         border: 3px solid $bwa;
     }
+
+    .esw-framed {
+        border-color: $bwa;
+    }
 }
 
 body.bwa-page .site-heading-upper.text-primary {
