@@ -18,7 +18,7 @@
     "name": "Edge of Hope",
     "category": "Champion",
     "description": "ESW Tag Team Champions",
-    "image": "assets/img/OIP.jpg",
+    "image": "assets/img/roster/EoH.jfif",
     "titleSlug": "tag"
   },
   {
@@ -233,7 +233,7 @@
     "name": "Witch Doctor",
     "category": "Wrestler",
     "description": "",
-    "image": "assets/img/OIP.jpg"
+    "image": "assets/img/roster/Witch_Doctor.jfif"
   },
 
 
@@ -259,7 +259,7 @@
     "name": "Dr. William Issac Thomas Christopher Henderson",
     "category": "Staff",
     "description": "",
-    "image": "assets/img/OIP.jpg"
+    "image": "assets/img/roster/William_Issac.jfif"
   },
   {
     "name": "AJ",
