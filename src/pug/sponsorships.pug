@@ -36,25 +36,25 @@ html(lang='en')
             .container
                 .esw-framed
                     .carousel.slide#carouselExampleIndicators(data-bs-ride='carousel')
-                    .carousel-indicators
-                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='0', class='active', aria-current='true', aria-label='Slide 1')
-                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='1', aria-label='Slide 2')
-                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='2', aria-label='Slide 3')
+                        .carousel-indicators
+                            button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='0', class='active', aria-current='true', aria-label='Slide 1')
+                            button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='1', aria-label='Slide 2')
+                            button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='2', aria-label='Slide 3')
 
-                    .carousel-inner
-                        .carousel-item.active
-                            img.d-block.w-100(src='assets/img/eswwideshot5.jpg', alt='Buffalo Riverworks... Outside!')
-                        .carousel-item
-                            img.d-block.w-100(src='assets/img/eswwideshot4.jpg', alt='Frontier Fire Hall')
-                        .carousel-item
-                            img.d-block.w-100(src='assets/img/eswwideshot1.jpg', alt='Brawlfest 2024 at Buffalo Riverworks')
+                        .carousel-inner
+                            .carousel-item.active
+                                img.d-block.w-100(src='assets/img/eswwideshot5.jpg', alt='Buffalo Riverworks... Outside!')
+                            .carousel-item
+                                img.d-block.w-100(src='assets/img/eswwideshot4.jpg', alt='Frontier Fire Hall')
+                            .carousel-item
+                                img.d-block.w-100(src='assets/img/eswwideshot1.jpg', alt='Brawlfest 2024 at Buffalo Riverworks')
 
-                    .carousel-control-prev(href='#carouselExampleIndicators', role='button', data-bs-slide='prev')
-                        span.carousel-control-prev-icon(aria-hidden='true')
-                        span.visually-hidden Previous
-                    .carousel-control-next(href='#carouselExampleIndicators', role='button', data-bs-slide='next')
-                        span.carousel-control-next-icon(aria-hidden='true')
-                        span.visually-hidden Next
+                        .carousel-control-prev(href='#carouselExampleIndicators', role='button', data-bs-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                            span.visually-hidden Previous
+                        .carousel-control-next(href='#carouselExampleIndicators', role='button', data-bs-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                            span.visually-hidden Next
         include includes/footer
 
         include includes/scripts

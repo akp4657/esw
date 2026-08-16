@@ -112,6 +112,12 @@ html(lang='en')
                                         li
                                             strong Vertical Clearance:
                                             |  High ceilings with a minimum of 13 feet of clearance.
+        section
+            .container
+                .row
+                    .col-xl-10.mx-auto.text-center
+                        .esw-framed
+                            img.img-fluid.d-block.mx-auto(src='assets/img/rumblephoto.jfif', alt='ESW wrestlers in the ring at a live event')
         section.page-section.cta
             .container
                 .row.g-4
@@ -146,25 +152,25 @@ html(lang='en')
             .container
                 .esw-framed
                     .carousel.slide#carouselExampleIndicators(data-bs-ride='carousel')
-                    .carousel-indicators
-                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='0', class='active', aria-current='true', aria-label='Slide 1')
-                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='1', aria-label='Slide 2')
-                        button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='2', aria-label='Slide 3')
+                        .carousel-indicators
+                            button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='0', class='active', aria-current='true', aria-label='Slide 1')
+                            button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='1', aria-label='Slide 2')
+                            button(type='button', data-bs-target='#carouselExampleIndicators', data-bs-slide-to='2', aria-label='Slide 3')
 
-                    .carousel-inner
-                        .carousel-item.active
-                            img.d-block.w-100(src='assets/img/bandits1.jpg', alt='Wrestlers Pose for the Buffalo Bandits Wrestling Night')
-                        .carousel-item
-                            img.d-block.w-100(src='assets/img/ub2.jpg', alt='Mike Skyros vs Cerin Rahne at the University of Buffalo')
-                        .carousel-item
-                            img.d-block.w-100(src='assets/img/bandits2.jpg', alt='Superbeast driven through a table by the Buffalo Bandits mascot')
+                        .carousel-inner
+                            .carousel-item.active
+                                img.d-block.w-100(src='assets/img/bandits1.jpg', alt='Wrestlers Pose for the Buffalo Bandits Wrestling Night')
+                            .carousel-item
+                                img.d-block.w-100(src='assets/img/ub2.jpg', alt='Mike Skyros vs Cerin Rahne at the University of Buffalo')
+                            .carousel-item
+                                img.d-block.w-100(src='assets/img/bandits2.jpg', alt='Superbeast driven through a table by the Buffalo Bandits mascot')
 
-                    .carousel-control-prev(href='#carouselExampleIndicators', role='button', data-bs-slide='prev')
-                        span.carousel-control-prev-icon(aria-hidden='true')
-                        span.visually-hidden Previous
-                    .carousel-control-next(href='#carouselExampleIndicators', role='button', data-bs-slide='next')
-                        span.carousel-control-next-icon(aria-hidden='true')
-                        span.visually-hidden Next
+                        .carousel-control-prev(href='#carouselExampleIndicators', role='button', data-bs-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                            span.visually-hidden Previous
+                        .carousel-control-next(href='#carouselExampleIndicators', role='button', data-bs-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                            span.visually-hidden Next
         section.page-section.cta
             .container
                 .row
